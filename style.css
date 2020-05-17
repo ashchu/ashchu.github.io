@@ -66,6 +66,7 @@ p{
 	font-size: 26px;
 }
 
+
 .row{
 	display: flex;
 	padding: 0 4px;
@@ -252,4 +253,63 @@ a {
 
 #profile-desc a{
   color: black;
+}
+
+.avg-button {
+	width: 80px;
+	height: 44px;
+	font-size: 1rem;
+	border: 2px solid black;
+	border-radius: 2px;
+	position: absolute;
+}
+
+#advice {
+	background-color: #d45079;
+  left: 10vw;
+  top: 42vh;
+  color: white;
+  text-align: center;
+}
+
+#advice:hover {
+	cursor: pointer;
+	background-color: #f4dada;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+#advice-reveal {
+	display: none;
+	background-color: #ffb6b9;
+	border: 2px solid black;
+	border-radius: 2px;
+	width: 300px;
+	height: 300px;
+	left: 4%;
+	top: 52%;
+	font-size: 0.9em;
+	position: absolute;
+	-webkit-animation: fadeIn 1s linear;
+  animation: fadeIn 1s linear;
+}
+
+#advice-reveal span {
+	padding-left: 8%;
+	padding-right: 5%;
+	position: absolute;
+}
+
+#funfact {
+	background-color: #60a9a6;
+	left: 55.4vw;
+	top: 8.9vh;
 }
