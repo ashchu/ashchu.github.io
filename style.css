@@ -315,3 +315,8 @@ a {
 	top: 8.9vh;
 	font-size: 0.9rem;
 }
+
+#funfact:hover {
+	background-color: #d3f6f3;
+	cursor: url("img/wand.png"), auto;
+}
