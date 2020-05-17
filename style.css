@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
 
 html {
 	scroll-behavior: smooth;
@@ -7,8 +9,14 @@ html {
 body{
 	/* Use cover to cover the entire screen*/
 	margin: 0;
-	font-family: 'Varela Round', sans-serif;
+	/* font-family: 'Varela Round', sans-serif; */
+	/* font-family: "Leitura News", Palatino, Georgia, "Times New Roman", serif; */
+	font-family: 'Source Serif Pro', serif;
+	/* font-family: serif; */
+}
 
+button {
+	font-family: 'Source Serif Pro', serif;
 }
 
 #home {
@@ -91,6 +99,10 @@ a {
 
 #profile {
   overflow: hidden;
+}
+
+#footer a {
+	color: white;
 }
 
 
@@ -327,4 +339,8 @@ a {
 	font-size: 1.1rem;
 	padding-top: 4%;
 	margin-left: 5%;
+}
+
+a{
+color: black;
 }
