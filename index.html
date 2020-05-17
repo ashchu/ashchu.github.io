@@ -1,38 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset='utf-8'>
 	<title> Ashley's Page :)</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/378ad4ae00.js" crossorigin="anonymous"></script>
+	<script src="./js/anim-typerwriter.js"></script>
 </head>
 <body>
 	<div id="home">
-		<div style="height: 27vh; width: 26vw; position: absolute; left: 9vw; top: 8.5vh; border-radius: 2px; border:2px solid black; background-color: #101114;">
+		<!-- Flashcard -->
+		<div style="height: 29vh; width: 26vw; position: absolute; left: 9vw; top: 8.5vh; border-radius: 2px; border:2px solid black; background-color: #101114;">
 		</div>
-		<div style="height: 27vh; width: 26vw; position: absolute; left: 8vw; top: 7vh; border-color: black; border: 3px solid; border-radius: 2px; background-color: white;">
-			<h1 id="name">Ashley Chu <span style="font-size: 1.4rem; padding-top: 12px; padding-left: 1.5vw;">ʅʕ•ᴥ•ʔʃ</span></h1>
+		<div style="height: 29vh; width: 26vw; position: absolute; left: 8vw; top: 7vh; border-color: black; border: 3px solid; border-radius: 2px; background-color: white;">
+			<div>
+				<div class="highlight"></div>
+				<h1 id="name">Ashley Chu <span style="font-size: 1.4rem; padding-top: 12px; padding-left: 1.5vw;">ʅʕ•ᴥ•ʔʃ</span></h1>
+			</div>
 			<h1 style="font-size: 0.8rem; display:block; margin-bottom:0px;">🐻 EECS @ UC Berkeley</h1>
 			<h1 style="font-size: 0.8rem; margin-top: 2px; margin-bottom: 0px; display:block;">👩🏻‍💻She/Her/Hers</h1>
 			<h1 style="font-size: 0.8rem; margin-top: 2px;display:block; margin-bottom: 15px; ">📫ashchu [at] berkeley [dot] edu</h1>
 			<div class="min-button" style="margin-left: 3vw; background-color: #e8fdf5;"><a href="#about"><span>About</span></a></div>
-			<div class="min-button" style="margin: 1vw; margin-top: 0; margin-right: 0;background-color: #f5c0a2;"><a href="#about"><span>Projects</span></a></div>
-			<div class="min-button" style="margin: 1vw;margin-top:0; background-color: #dedef0;"><a href="#about"><span>Resume</span></a></div>
+			<div class="min-button" style="margin: 1vw; margin-top: 0; margin-right: 0;background-color: #f5c0a2;"><a href="#project"><span>Projects</span></a></div>
+			<div class="min-button" style="margin: 1vw;margin-top:0; background-color: #dedef0;"><a href="https://corgiorgy.com/"><span>Click Me</span></a></div>
 		</div>
 
-		<div id="diamond"></div>
-		<div id="profile2-box"></div>
-		<div id="profile-box"></div>
-
-		<div>
-			<div id="profile2">
-				<img src="img/hack.jpg">
+<!-- Images -->
+		<section>
+		<!-- <div id="diamond"></div> -->
+		<!-- Bottom Image -->
+			<div id="profile2-box"></div>
+			<div id="profile-box"></div>
+			<div>
+				<img style="left: 87vw; top:70vh; height: auto; max-width:11%; width:11%; position:relative;" src="img/grid2.png">
+				<div id="profile2">
+					<img src="img/hack.jpg">
+				</div>
 			</div>
-		</div>
+			<img style="left: 68vw; top:16vh; max-width: 13%; width: 13%; position:absolute; height: auto;" src="img/grid.png">
 
-		<div>
-			<div id="profile">
-				<img src="img/me.jpg">
+<!-- Top image -->
+			<div>
+				<div id="profile">
+					<img src="img/me.jpg">
+				</div>
+				<img style="left: 82vw; top:36vh; position:absolute; width:8%" src="https://media.giphy.com/media/37raDfjV7EUotj32d9/giphy.gif">
+				<img style="left:30vw; top:20vh; position: absolute; width: 8%;" src="https://media.giphy.com/media/1xNXxyjhta0WA09O6B/giphy.gif">
 			</div>
+	</section>
+
+	<div>
+
+	</div>
+
+<!-- This is my Bio -->
+	<div style="height: 45vh; width: 33vw; position: absolute; left: 30vw; top: 43vh; border-radius: 2px; border:2px solid black; background-color: #101114;"></div>
+	<div style="height: 45vh; width: 33vw; position: absolute; left: 29vw; top: 41vh; border-color: black; border: 3px solid; border-radius: 2px; background-color: #dcedc2;">
+		<h1 style="width: 100%; position: absolute; display:block">
+			<a href="" class="typewrite" data-period="2000" data-type='[ "Hello!", " My name is Ashley.", "Nice to meet you :)"]'>
+				<span class="wrap"></span>
+			</a>
+		</h1>
+			<div id="profile-desc">
+				<span>I'm a sophomore studying electrical engineering and computer science student at the
+					<a class="light" href="https://www.berkeley.edu/">University of California, Berkeley</a>
+					(go bears!). This summer, I'm interning at
+					<a class="light" href="https://aws.amazon.com/">Amazon</a> on their AWS Quilt team.
+				</span>
+				<span>
+			    I am extremely passionate about
+					diversity in <a class="light" href="https://shestemscamp.org">STEM initiatives</a>
+					and fascinated by animation + graphics. I'll admit,
+					sometimes I spend a little too much time as a Netflix observationist
+					or self-identified bobaholic, Netflix observationist, and lover of sweets.
+				</span>
+			</div>
+	</div>
+
+	<div class="socials" style="left: 5.2vw; top: 86.5vh; border:2px solid black; background-color: #101114;"></div>
+	<div class="socials" style="background-color: #d4a5a5;">
+		<div style="width:100%; align-content: center;">
+			<a href="assets/resume.pdf"><i id="icon-spacing" class="far fa-file-alt"></i></a>
+			<a href="https://github.com/ashchu"><i id="icon-spacing" class="fab fa-github-alt"></i></a>
+			<a href="https://linkedin.com/in/ashley-chu"><i id="icon-spacing" class="fab fa-linkedin-in"></i></a>
+			<a href="https://instagram.com/imagirlwhocodes"><i id="icon-spacing" class="fab fa-instagram"></i></a>
+			<a href="https://facebook.com/ashley.chu.750"><i id="icon-spacing" class="fab fa-facebook-f"></i></a>
 		</div>
+	</div>
 
 	</div>
 	<div id="about">
@@ -40,8 +95,11 @@
 		<p>I am inventor of iDog the best collar in da world. iDog is revolutionary collar changing the world and relationship of dog and owner. We take technology to the pet level by making independence and accesibility to all dog in world. iDog means happy dog and that is our mission.</p>
 	</div>
 	<div id="footer">
-		<div style="margin-left: 10vw; color: white; padding-top:2vh;">
-			Inspiration by Angela Xu and <a href="https://slim.computer">Sarah Lim</a> ❤️ Check out my source code <a href="https://github.com/ashchu" style="font-style: italic;">here</a>.
+		<div style="margin-left: 10vw; padding-top:2vh;">
+			Design inspiration by Angela Xu and <a href="https://slim.computer">Sarah Lim</a> ❤️
+			<span style="margin-left: 20vw;">
+				Check out my <a href="https://github.com/ashchu" style="font-style: italic;">source code</a> on Github or peek at my first website.
+			</span>
 		</div>
 	</div>
 </body>
