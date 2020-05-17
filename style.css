@@ -311,5 +311,7 @@ a {
 #funfact {
 	background-color: #60a9a6;
 	left: 55.4vw;
+	color: white;
 	top: 8.9vh;
+	font-size: 0.9rem;
 }
