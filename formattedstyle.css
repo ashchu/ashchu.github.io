@@ -1,0 +1,18 @@
+#about{
+	height: 100vh;
+	width: 100vw;
+}
+
+.desc {
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+p{
+	width: 60%;
+	line-height: 40px;
+	font-size: 26px;
+}

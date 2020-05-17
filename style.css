@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+html {
+	scroll-behavior: smooth;
+}
+
 body{
 	/* Use cover to cover the entire screen*/
 	margin: 0;
@@ -48,24 +52,6 @@ h1 {
 	color:white;
 	text-shadow: 2px 0px 2px black;
 }
-/*vh fits the entire screen*/
-
-#about{
-	height: 100vh;
-	width: 100vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-}
-
-p{
-	width: 60%;
-	line-height: 40px;
-	font-size: 26px;
-}
-
 
 .row{
 	display: flex;
@@ -319,4 +305,26 @@ a {
 #funfact:hover {
 	background-color: #d3f6f3;
 	cursor: url("img/wand.png"), auto;
+}
+
+#funfact-reveal {
+	left: 43vw;
+	top: 13vh;
+	position: absolute;
+	border: 2px solid black;
+	border-radius: 2px;
+	display: none;
+	width: 200px;
+	background-color: #badfdb;
+	height: 40px;
+	-webkit-animation: fadeIn 1s linear;
+  animation: fadeIn 1s linear;
+}
+
+#funfact-reveal span {
+	position: absolute;
+	text-align: center;
+	font-size: 1.1rem;
+	padding-top: 4%;
+	margin-left: 5%;
 }

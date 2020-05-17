@@ -34,7 +34,6 @@ var TxtType = function(el, toRotate, period) {
         delta = 500;
         }
         if (this.txt.includes(")")) {
-          console.log("ahh");
           return;
         }
 
