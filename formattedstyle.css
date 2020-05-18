@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@100&display=swap');
+
 #about{
-	height: 200vh;
+	height: 320vh;
 	width: 100vw;
   /* font-size: 0.1rem; */
 }
@@ -12,8 +14,11 @@
 	padding-bottom: 25px;
 }
 
+.desc p {
+  width: 50%;
+}
+
 p{
-	width: 65%;
 	/* line-height: 1.7rem; */
   margin: 0;
   margin-top: 1.5rem;
@@ -65,4 +70,60 @@ p{
 .lightClass:hover{
 	background: rgba(131,229,255,1);
 	transition: all linear .2s;
+}
+
+.descTitle span {
+  float:right;
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+  /* padding-top:10px; */
+  display:inline-flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 30px 0 0 0 ;
+  padding: 0;
+  width:100%;
+}
+
+li {
+  /* padding-right: 10px; */
+  /* flex: 0 1 auto; */
+  text-align:center;
+}
+
+li span {
+  font-style: italic;
+  font-size: 12px;
+  width: 100px;
+  /* float:right; */
+}
+
+.liItem p {
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.boxDesc {
+  margin-top: 10px;
+  font-family: 'DM Mono', monospace;
+}
+
+.liItem img {
+  max-width: 210px;
+  max-height: 100px;
+}
+
+.boxForm {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.boxForm:hover {
+  opacity: 0.6;
+  transition: 0.4s;
 }
