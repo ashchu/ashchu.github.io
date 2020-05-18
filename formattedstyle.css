@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@100&display=swap');
 
 #about{
-	height: 320vh;
+	height: fit-content;
 	width: 100vw;
   /* font-size: 0.1rem; */
 }
