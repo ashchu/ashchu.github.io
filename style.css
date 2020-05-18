@@ -206,7 +206,7 @@ a {
 
 .socials{
 	/* width: 13vw; */
-	height: 5vh;
+	height: fit-content;
 	position: fixed;
 	border: 2px solid black;
 	border-radius: 2px;
