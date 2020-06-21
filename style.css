@@ -4,6 +4,7 @@
 
 html {
 	scroll-behavior: smooth;
+	max-height:100%;
 }
 
 body{
@@ -15,11 +16,11 @@ body{
 	/* font-family: serif; */
 }
 
-@media only screen and (max-width: 900px) {
+/* @media only screen and (max-width: 900px) {
 	body {
 	background-color:black;
 	}
-}
+} */
 
 button {
 	font-family: 'Source Serif Pro', serif;
@@ -111,6 +112,31 @@ a {
 	color: white;
 }
 
+.links {
+	font-size:40px;
+	text-shadow: 3px 3px 3px;
+	position: absolute;
+	top: 24vh;
+	left: 41vw;
+	/* padding:10px; */
+	margin: 10px;
+	width: 200px;
+	background-color: lightblue;
+	border: 2px solid;
+	border-color:black;
+	border-radius: 4px;
+}
+
+
+.links a{
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.links a:hover {
+	opacity: 0.5;
+	transition-duration: 0.5s;
+}
 
 #diamond {
     position: absolute;
