@@ -112,7 +112,7 @@ a {
 	color: white;
 }
 
-.links {
+#links {
 	font-size:40px;
 	text-shadow: 3px 3px 3px;
 	position: absolute;
@@ -128,12 +128,12 @@ a {
 }
 
 
-.links a{
+#links a{
 	padding-left: 7px;
 	padding-right: 7px;
 }
 
-.links a:hover {
+#links a:hover {
 	opacity: 0.5;
 	transition-duration: 0.5s;
 }
