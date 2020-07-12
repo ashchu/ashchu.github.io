@@ -10,6 +10,8 @@ body {
 
 a {
   color: lightblue;
+  line-height: 3rem;
+  display: block;
 }
 
 h1{
@@ -24,4 +26,13 @@ h2{
   font-style: normal;
   font-size: 25px;
   display:inline-block;
+}
+
+.note {
+  font-size: 5px;
+}
+
+.story{
+  padding-left: 100px;
+  width: 60%;
 }
