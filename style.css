@@ -2,6 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
 
 
+#loading{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: gray;
+  color: white;
+  opacity: 1;
+  transition: 0.5s;
+  visibility: visible;
+}
+#loading.hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+
+#website{
+	visibility: hidden
+}
 html {
 	scroll-behavior: smooth;
 	max-height:100%;
@@ -124,7 +144,8 @@ a {
 	background-color: lightblue;
 	border: 2px solid;
 	border-color:black;
-	border-radius: 4px;
+	border-radius: 2.1px;
+  box-shadow: 5px 5px #101114;
 }
 
 
@@ -297,6 +318,7 @@ a {
 	border: 2px solid black;
 	border-radius: 2px;
 	position: absolute;
+  box-shadow: -5px -5px #101114;
 }
 
 #advice {

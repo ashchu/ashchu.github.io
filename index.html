@@ -21,6 +21,7 @@ having a good day!
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/378ad4ae00.js" crossorigin="anonymous"></script>
 	<script src="./js/funfact.js"></script>
+	<script src="preloader.js"></script>
 	<script src="./js/anim-typerwriter.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-JWF0MGNBDN"></script>
@@ -32,12 +33,17 @@ having a good day!
 	  gtag('config', 'G-JWF0MGNBDN');
 	</script>
 </head>
+<!-- <div class="preloader-wrapper">
+        <div class="preloader">
+            <img src="https://media2.giphy.com/media/lcwrrsfs4Px6w/200.gif" alt="Page Loading">
+        </div>
+</div> -->
 <body>
+	<!-- <div id="loading">Loading site...</div> -->
+	<div id="website">
 	<div id="home">
 		<!-- Flashcard -->
-		<div style="height: 29vh; width: 26vw; position: absolute; left: 9vw; top: 8.5vh; border-radius: 2px; border:2px solid black; background-color: #101114;">
-		</div>
-		<div style="height: 29vh; width: 26vw; position: absolute; left: 8vw; top: 7vh; border-color: black; border: 3px solid; border-radius: 2px; background-color: white;">
+		<div style="position: absolute; left: 8vw; top: 7vh; padding-right: 2.5%; border-color: black; border: 3px solid; border-radius: 2px; background-color: white; box-shadow: 5px 10px #101114">
 			<div>
 				<!-- <div class="highlight"></div> -->
 				<h1 id="name">Ashley Chu <span style="font-size: 1.4rem; padding-top: 12px; padding-left: 1.5vw;">ʅʕ•ᴥ•ʔʃ</span></h1>
@@ -45,27 +51,24 @@ having a good day!
 			<h1 style="font-size: 0.8rem; display:block; margin-bottom:0px;">🐻 EECS @ UC Berkeley</h1>
 			<h1 style="font-size: 0.8rem; margin-top: 2px; margin-bottom: 0px; display:block;">👩🏻‍💻 She/Her/Hers</h1>
 			<h1 style="font-size: 0.8rem; margin-top: 2px;display:block; margin-bottom: 15px; ">📫 ashchu [at] berkeley [dot] edu</h1>
-			<div style="justify-content: center; display: flex;">
-			<div class="min-button" style="margin-left: 3vw; background-color: #e8fdf5;"><a href="#about"><span>About</span></a></div>
-			<div class="min-button" style="margin: 1vw; margin-top: 0; margin-right: 0;background-color: #f5c0a2;"><a href="#project"><span>Projects</span></a></div>
-			<div class="min-button" style="margin: 1vw;margin-top:0; background-color: #dedef0;"><a href="https://vote.org"><span>Click Me</span></a></div>
+			<div style="justify-content: center; display:inline-flex">
+				<div class="min-button" style="margin-left: 3vw; background-color: #e8fdf5;"><a href="#about"><span>About</span></a></div>
+				<div class="min-button" style="margin: 1vw; margin-top: 0; margin-right: 0;background-color: #f5c0a2;"><a href="#project"><span>Projects</span></a></div>
+				<div class="min-button" style="margin: 1vw;margin-top:0; background-color: #dedef0;"><a href="https://vote.org"><span>Click Me</span></a></div>
 			</div>
 			<!-- <a href="https://corgiorgy.com"></a> -->
 		</div>
 
 <!-- icons -->
-		<!-- <div style="background-color: #101114; width: 200px;height: 54px; position: absolute; top: 26.7vh; left: 42.5vw; border-radius: 2px;">
-		</div>
 		<div id="links">
 			<a href="https://ashchu.github.io/foodJournal">🍔</a>
-			<a href="https://ashchu.github.io/">💻</a>
-			<a href="stories.html">📓</a>
-		</div> -->
+			<a href="https://shestemscamp.org/">💻</a>
+			<a href="#">📓</a>
+		</div>
 		<!-- Fun Fact -->
 		<div id="funfact-reveal">
 			<span id="ffspan">You look nice today!</span>
 		</div>
-		<div class="avg-button" style="left: 55vw; top: 8vh; background-color: black"></div>
 		<button class="avg-button" id="funfact" onclick="addFact()">Fun Fact</button>
 
 		<!-- Images -->
@@ -94,7 +97,6 @@ having a good day!
 
 <!-- Advice -->
 	<div>
-		<div class="avg-button" style="left: 10.5vw; top: 42.5vh; background-color: black"></div>
 		<button class="avg-button" id="advice" onclick="addAdvice()">Advice</button>
 		<div id="advice-reveal">
 			<span style="padding-top:5%; padding-right: 60%;">def advice():</span>
@@ -122,10 +124,9 @@ having a good day!
 	</div>
 
 <!-- This is my Bio -->
-	<div style="height: 380px; width: 33vw; position: absolute; left: 30vw; top: 43vh; border-radius: 2px; border:2px solid black; background-color: #101114;"></div>
-	<div style="width: 33vw; overflow: scroll; position: absolute; left: 29vw; max-height:380px; top: 41vh; border-color: black; border: 3px solid; border-radius: 2px; background-color: #dcedc2;">
+	<div style="width: 33vw; overflow: scroll; position: absolute; left: 29vw; max-height:380px; top: 41vh; border-color: black; border: 3px solid; border-radius: 2px; background-color: #dcedc2; box-shadow: 10px 10px #101114">
 		<h1 style="width: 100%; position: absolute; display:block">
-			<a href="" class="typewrite" data-period="2000" data-type='[ "Hello!", " My name is Ashley.", "Nice to meet you :)"]'>
+			<a class="typewrite" data-period="2000" data-type='[ "Hello!", " My name is Ashley.", "Nice to meet you :)"]'>
 				<span class="wrap"></span>
 			</a>
 		</h1>
@@ -282,6 +283,9 @@ having a good day!
 			<br>
 			<br>
 		</div>
+	</div>
+</div>
+</body>
 		<!-- <div class="desc" style="background-color: white">
 			<p class="title"><span class="hight">Just for fun! 🤠</span></p>
 
