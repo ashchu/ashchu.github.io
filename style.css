@@ -3,20 +3,48 @@
 
 
 #loading{
-  position:fixed;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6dcdc;
+  position: fixed;
+  display: flex;
   top:0;
   left:0;
   right:0;
   bottom:0;
-  background-color: gray;
   color: white;
   opacity: 1;
-  transition: 0.5s;
+  transition: 5s;
   visibility: visible;
 }
+
 #loading.hidden{
   opacity: 0;
   visibility: hidden;
+}
+
+#loading.hidden img{
+  opacity: 0;
+  visibility: hidden;
+}
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(359deg);
+		}
+		to {
+				-webkit-transform: rotate(0deg);
+		}
+}
+
+#loading img{
+  transition: 0.5s;
+  opacity: 1;
+  -webkit-animation: rotation 2s infinite linear;
+  visibility: visible;
 }
 
 #website{
