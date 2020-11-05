@@ -264,7 +264,8 @@ a {
 	border: 2px solid black;
 	border-radius: 2px;
 	left: 5vw;
-	top: 86vh;
+	top: 90vh;
+  box-shadow: 5px 5px #101114;
 }
 
 /* @media screen and (max-width:360px){
