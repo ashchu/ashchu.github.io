@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+        <array key="Nunito-Light.ttf">
+            <string>Nunito-Light</string>
+        </array>
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="vsco_front_end" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="vscodeol  gy. " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ana-gc-UXE">
+                                <rect key="frame" x="68" y="213" width="274" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="46"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="find your colors. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLl-PR-F6z">
+                                <rect key="frame" x="70" y="271" width="168" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeM-Z8-XGu">
+                                <rect key="frame" x="216" y="413" width="128" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="-13"/>
+                                <inset key="imageEdgeInsets" minX="52" minY="0.0" maxX="0.0" maxY="35"/>
+                                <state key="normal" title="Camera roll">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="image" image="film" catalog="system" symbolScale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="openPhotoLibraryButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bdm-R5-fx0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yM3-2P-ErM">
+                                <rect key="frame" x="67" y="412" width="130" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="-15"/>
+                                <inset key="imageEdgeInsets" minX="52" minY="0.0" maxX="0.0" maxY="35"/>
+                                <state key="normal" title="Take a picture">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="image" image="camera.fill" catalog="system" symbolScale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="openCameraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Bh-bK-CSe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameras" destination="yM3-2P-ErM" id="FlV-Ja-2pT"/>
+                        <outlet property="photos" destination="FeM-Z8-XGu" id="bMc-Q1-450"/>
+                        <outlet property="text" destination="bLl-PR-F6z" id="D69-rM-Mkg"/>
+                        <outlet property="vscodeology" destination="Ana-gc-UXE" id="C8v-nh-udQ"/>
+                        <segue destination="HHJ-wG-BmP" kind="presentation" identifier="circlesSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Omq-TK-sTd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="107.8125"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="cve-La-ppU">
+            <objects>
+                <viewController id="HHJ-wG-BmP" customClass="SecondViewController" customModule="vsco_front_end" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rFc-Qt-CMX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UDY-lq-wgh">
+                                <rect key="frame" x="50" y="144" width="231" height="54"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your colors:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVc-IF-mFm">
+                                        <rect key="frame" x="0.0" y="0.0" width="231" height="30.5"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click on a circle for more detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UjF-BJ-pSf">
+                                        <rect key="frame" x="0.0" y="30.5" width="231" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbW-Sn-dVQ">
+                                <rect key="frame" x="284" y="715" width="77" height="77"/>
+                                <state key="normal" image="Image"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="HHJ-wG-BmP" eventType="touchUpInside" id="JUC-ZY-Vy4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aI0-Oi-cxI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aI0-Oi-cxI" firstAttribute="bottom" secondItem="MbW-Sn-dVQ" secondAttribute="bottom" constant="70" id="MSb-QH-wJd"/>
+                            <constraint firstItem="MbW-Sn-dVQ" firstAttribute="leading" secondItem="aI0-Oi-cxI" secondAttribute="leading" constant="284" id="aDB-1O-RPf"/>
+                            <constraint firstItem="UDY-lq-wgh" firstAttribute="top" secondItem="aI0-Oi-cxI" secondAttribute="top" constant="100" id="aeY-ou-1ax"/>
+                            <constraint firstItem="UDY-lq-wgh" firstAttribute="leading" secondItem="aI0-Oi-cxI" secondAttribute="leading" constant="50" id="jZg-u9-oD0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="znA-Cc-8Ac"/>
+                    <connections>
+                        <outlet property="backButton" destination="MbW-Sn-dVQ" id="vLS-9T-hM0"/>
+                        <segue destination="OUc-sg-ZSa" kind="presentation" identifier="Colors" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="6R5-i3-6FL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="two-nD-wvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="108"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="wOa-7a-4dW">
+            <objects>
+                <viewController id="OUc-sg-ZSa" customClass="ThirdViewController" customModule="vsco_front_end" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8wL-cf-e4c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRd-NA-bc4">
+                                <rect key="frame" x="284" y="715" width="77" height="77"/>
+                                <state key="normal" image="Image"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="HHJ-wG-BmP" eventType="touchUpInside" id="Nce-N2-gcV"/>
+                                    <action selector="backButtonPressed:" destination="OUc-sg-ZSa" eventType="touchUpInside" id="wQ9-5L-DeO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palette:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sy1-Lp-9bW">
+                                <rect key="frame" x="65" y="394" width="77" height="31"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gew-ot-d4c">
+                                <rect key="frame" x="0.0" y="32" width="414" height="221"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="221" id="qZJ-dz-MWj"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eE8-eK-KYq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iRd-NA-bc4" firstAttribute="leading" secondItem="eE8-eK-KYq" secondAttribute="leading" constant="284" id="6ah-Tq-ypc"/>
+                            <constraint firstItem="eE8-eK-KYq" firstAttribute="bottom" secondItem="gew-ot-d4c" secondAttribute="bottom" constant="609" id="7qq-iq-NJc"/>
+                            <constraint firstItem="gew-ot-d4c" firstAttribute="leading" secondItem="eE8-eK-KYq" secondAttribute="leading" id="G0J-e0-Yzm"/>
+                            <constraint firstItem="eE8-eK-KYq" firstAttribute="top" secondItem="gew-ot-d4c" secondAttribute="top" constant="12" id="WAs-a7-Fce"/>
+                            <constraint firstItem="Sy1-Lp-9bW" firstAttribute="leading" secondItem="eE8-eK-KYq" secondAttribute="leading" constant="65" id="eUN-fH-c1S"/>
+                            <constraint firstItem="eE8-eK-KYq" firstAttribute="bottom" secondItem="iRd-NA-bc4" secondAttribute="bottom" constant="70" id="gur-Z3-q9y"/>
+                            <constraint firstItem="gew-ot-d4c" firstAttribute="centerX" secondItem="8wL-cf-e4c" secondAttribute="centerX" id="niD-DB-zst"/>
+                            <constraint firstItem="Sy1-Lp-9bW" firstAttribute="top" secondItem="eE8-eK-KYq" secondAttribute="top" constant="350" id="oIe-dA-J3D"/>
+                            <constraint firstItem="gew-ot-d4c" firstAttribute="centerX" secondItem="eE8-eK-KYq" secondAttribute="centerX" id="r1n-p9-tcW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="iRd-NA-bc4" id="AP9-BW-oMV"/>
+                        <outlet property="imageView" destination="gew-ot-d4c" id="SBE-fE-RGZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MlU-7l-lFr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1895.6521739130437" y="107.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="77" height="77"/>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <image name="film" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
