@@ -271,6 +271,27 @@ a {
 	background-color: #bfcfff;
 }
 
+@media screen and (max-width: 600px) {
+  #profile2{
+    visibility: hidden;
+  }
+  #profile2:hover{
+    visibility: hidden;
+  }
+  #profile2-box{
+    visibility: hidden;
+  }
+  #profile-box{
+    visibility: hidden;
+  }
+  #profile{
+    visibility: hidden;
+  }
+  #profile:hover{
+    visibility: hidden;
+  }
+}
+
 .highlight {
 	opacity: 0.5;
 	content: '';
