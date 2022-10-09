@@ -61,6 +61,19 @@ p{
   margin-left: 5%;
 }
 
+
+.descText p{
+	margin-left: 5%;
+	font-weight: 500;
+}
+
+.descText a {
+	/* display:none; */
+	position:none;
+	padding: 0;
+	margin: 0;
+}
+
 .lightClass {
 	background: rgba(131,229,255,0.5);
   transition: all linear .2s;

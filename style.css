@@ -18,11 +18,7 @@
   bottom:0;
   color: white;
   opacity: 1;
-<<<<<<< HEAD
-  transition: 3s;
-=======
-  transition: 5s;
->>>>>>> 3b52d38a18618f9672f0a371437f2cff3fc6b2a2
+  transition: 2s;
   visibility: visible;
 }
 
@@ -456,4 +452,9 @@ a {
 
 a{
 color: black;
+}
+
+a:hover {
+	opacity: 0.5;
+	transition-duration: 0.5s;
 }
