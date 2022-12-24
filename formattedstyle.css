@@ -18,6 +18,18 @@
   width: 50%;
 }
 
+.descT {
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 25px;
+}
+
+.descT p {
+  width: 100%;
+}
+
 p{
 	/* line-height: 1.7rem; */
   margin: 0;
