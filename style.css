@@ -445,9 +445,15 @@ a {
 #funfact-reveal span {
 	position: absolute;
 	text-align: center;
-	font-size: 1.1rem;
+	font-size: 0.8rem;
 	padding-top: 4%;
 	margin-left: 5%;
+}
+
+#projectid:hover{
+  cursor: pointer;
+  opacity: 0.5;
+	transition-duration: 0.5s;  
 }
 
 a{
