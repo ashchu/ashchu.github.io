@@ -453,7 +453,7 @@ a {
 #projectid:hover{
   cursor: pointer;
   opacity: 0.5;
-	transition-duration: 0.5s;  
+	transition-duration: 0.5s;
 }
 
 a{
@@ -463,4 +463,12 @@ color: black;
 a:hover {
 	opacity: 0.5;
 	transition-duration: 0.5s;
+}
+
+.bclass{
+  font-weight: 800;
+  text-align: center;
+  text-decoration: underline;
+  /* background-color: #F5C6C6; */
+  width: auto;
 }

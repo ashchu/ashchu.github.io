@@ -21,7 +21,7 @@ function addFact() {
 }
 
 function addProject() {
-  var sites = ["https://arkgnaaerkgnajengajngreajngaejngaenhatrklhnalknth.netlify.app/", "https://bitbybit.netlify.app/", "https://justthebeginningheheheehe.netlify.app/", "https://mommasday21.netlify.app/", "https://walmeals.netlify.app/", "https://60b6f97f95a71441e64c5570--inertiamobile.netlify.app/", "https://swetreatwoohoo.netlify.app/", "https://ucbswebsite.netlify.app/", "https://ilovemydoggos.netlify.app/", "https://kwkphotoalblum.netlify.app/", "https://happymothersday.netlify.app/", "https://alamedaasa.netlify.app/", "https://ashleychu.netlify.app/" ];
+  var sites = ["https://arkgnaaerkgnajengajngreajngaejngaenhatrklhnalknth.netlify.app/", "https://bitbybit.netlify.app/", "https://justthebeginningheheheehe.netlify.app/", "https://mommasday21.netlify.app/", "https://shestems.netlify.app/", "https://walmeals.netlify.app/", "https://60b6f97f95a71441e64c5570--inertiamobile.netlify.app/", "https://swetreatwoohoo.netlify.app/", "https://ucbswebsite.netlify.app/", "https://ilovemydoggos.netlify.app/", "https://kwkphotoalblum.netlify.app/", "https://happymothersday.netlify.app/", "https://alamedaasa.netlify.app/", "https://ashleychu.netlify.app/" ];
   var index = Math.floor(Math.random() * (sites.length));
   open(sites[index]);
 }

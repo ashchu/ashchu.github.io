@@ -77,13 +77,15 @@ p{
 .descText p{
 	margin-left: 5%;
 	font-weight: 500;
+	font-style: normal;
 }
 
-.descText a {
-	/* display:none; */
-	position:none;
-	padding: 0;
-	margin: 0;
+.descTextb {
+	margin-top: 0;
+	font-style: italic;
+	padding-top:5px;
+	font-size: 1rem;
+	margin-left: 5%;
 }
 
 .lightClass {
