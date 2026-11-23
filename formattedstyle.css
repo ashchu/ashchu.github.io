@@ -12,6 +12,8 @@
 	justify-content: center;
 	align-items: center;
 	padding-bottom: 25px;
+  top:50px;
+  min-height: 100vh;
 }
 
 .desc p {
@@ -32,7 +34,7 @@
 
 p{
 	/* line-height: 1.7rem; */
-  margin: 0;
+  /* margin: 0; */
   margin-top: 1.5rem;
 	/* font-size: 1.4rem; */
 	font-size: 1.15rem;
@@ -42,6 +44,7 @@ p{
   text-align: center;
   font-size: 2rem;
   margin: fit-content;
+  
 }
 
 .title:after p {
@@ -143,4 +146,44 @@ p{
 .boxForm:hover {
   opacity: 0.6;
   transition: 0.4s;
+}
+
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 2vh 8vw;                 /* 8vw matches your flashcard's left offset */
+  background: transparent;
+}
+
+.site-nav nav {
+  display: flex;
+  align-items: baseline;
+  gap: clamp(1rem, 2.5vw, 1.75rem);
+}
+
+.site-nav a {
+  color: rgba(16, 17, 20, 0.55);   /* your #101114 at 55% */
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.site-nav a:hover {
+  color: rgba(16, 17, 20, 0.95);
+}
+
+html { scroll-behavior: smooth; }
+#now, #past, #lessons, #built { scroll-margin-top: 4.5rem; }
+
+@media (max-width: 600px) {
+  .site-nav { top: 3vh; right: 5vw; }
+  .site-nav a { font-size: 0.9rem; }
 }

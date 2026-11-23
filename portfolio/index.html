@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>portfolio · ashchu</title>
+	<link rel="icon" href="../img/logo.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&display=swap">
+	<style>
+		:root { --bg: rgb(255,255,252); --fg: rgb(26,24,24); --link: rgb(20,120,20);
+			--rule: rgba(26,24,24,.2); --media-border: rgb(200,200,200);
+			--badge-bg: rgb(200,235,200); --badge-fg: rgb(20,120,20); --row: 24px; color-scheme: light; }
+		* { box-sizing: border-box; }
+		body { margin:0; font-family:'EB Garamond',Garamond,serif; font-size:18px; line-height:var(--row);
+			background:var(--bg); color:var(--fg); }
+		h1,h2,h3 { margin:0; font-weight:500; line-height:var(--row); position:relative; }
+		h1 { font-size:30px; top:-4.26px; }
+		h2 { font-size:24px; top:-2.13px; display:flex; align-items:center; margin-bottom:var(--row); }
+		h1,h2 { text-shadow:0 1px 2px rgba(0,0,0,.1); }
+		h2::after { content:''; flex-grow:1; height:1px; margin:0 10px 0 12px; background:var(--rule); }
+		h3 { font-size:20px; top:-.71px; }
+		p { margin:0 0 var(--row); }
+		hr { border:none; height:1px; background:var(--rule); margin:calc((var(--row) - 1px)/2) 10px; }
+		b, strong { font-weight:500; }
+		a { color:var(--link); text-decoration:none; position:relative; }
+		a:not(.no-hover)::after { content:''; position:absolute; width:100%; height:1px; bottom:-1px; left:0;
+			background:var(--link); transform:scaleX(0); transform-origin:bottom right; transition:transform .2s ease; }
+		a:not(.no-hover):hover::after { transform:scaleX(1); transform-origin:bottom left; }
+		.wrap { max-width:800px; margin:0 auto; padding:calc(2*var(--row)) 20px var(--row); }
+		.text { margin:0 10px; }
+		.last-p { margin-bottom:0; }
+		.project { display:flex; flex-direction:column; }
+		.project .info { display:contents; }
+		.project h3 { order:1; margin:0 10px; }
+		.project .thumb { order:2; margin:0 10px; align-self:flex-start; }
+		.project .body { order:3; margin:0 10px; }
+		.project .body p { margin:0; }
+		.media { display:block; width:100%; max-width:calc(7*var(--row)); margin:0 0 var(--row);
+			border-radius:6px; border:.5px solid var(--media-border); }
+		.badge { display:inline-block; line-height:calc(var(--row) - 6px); padding:0 8px; margin-right:5px;
+			white-space:nowrap; border-radius:4px; background:var(--badge-bg); color:var(--badge-fg); }
+		@media (min-width:600px) {
+			.project { flex-direction:row-reverse; align-items:flex-start; }
+			.project .info { display:flex; flex-direction:column; flex:1 1 0; min-width:250px; }
+			.project .thumb { flex:0 0 calc(7*var(--row)); width:calc(7*var(--row)); margin:0 10px; }
+			.project .media { max-width:none; margin:0; }
+			.project h3, .project .body { margin:0; }
+			.project h3, .project .thumb, .project .body { order:unset; }
+		}
+	</style>
+</head>
+<body>
+<div class="wrap">
+	<div class="text">
+		<h1>ashley chu</h1>
+		<p>3D animation, software, and exhibit design</p>
+		<p>&#123; <a href="index.html">home</a>, <a href="now.html">now</a>, <a href="prev.html">prev</a> &#125;</p>
+		<h2>portfolio</h2>
+	</div>
+	<div class="project">
+		<div class="info">
+			<h3>Spineless</h3>
+			<div class="body">
+				<p><b><u>Ashley Chu</u></b>, Katherine Yuhan, Claudia Korea, Joshua Yang</p>
+				<p>A 3D animated short that celebrates the beauty of late blooming.</p>
+				<p><span class="badge">Maya</span> <span class="badge">RenderMan</span> <span class="badge">After Effects</span> &#123; <a target="_blank" href="https://www.youtube.com/watch?v=13DgBv8zRok">film</a> &#125;</p>
+			</div>
+		</div>
+		<a target="_blank" href="https://www.youtube.com/watch?v=13DgBv8zRok" class="thumb no-hover"><img class="media" src="img/spineless.png" alt="Title frame from Spineless"></a>
+	</div>
+	<hr>
+	<div class="project">
+		<div class="info">
+			<h3>Fleeting</h3>
+			<div class="body">
+				<p><b><u>Ashley Chu</u></b>, Hillary Huynh, Harmony He, Edward Li</p>
+				<p>A 3D animated short that follows a teddy bear's attempt to escape.</p>
+				<p><span class="badge">Maya</span> <span class="badge">RenderMan</span> <span class="badge">After Effects</span> &#123; <a target="_blank" href="https://www.youtube.com/watch?v=69Yvn6kf_P8">film</a> &#125;</p>
+			</div>
+		</div>
+		<a target="_blank" href="https://www.youtube.com/watch?v=69Yvn6kf_P8" class="thumb no-hover"><img class="media" src="img/fleeting.png" alt="Still from Fleeting"></a>
+	</div>
+	<hr>
+	<div class="project">
+		<div class="info">
+			<h3>The Floor Is Lava</h3>
+			<div class="body">
+				<p>An LED-reactive show that lights up and changes color based on the wearer's step patterns.</p>
+				<p><span class="badge">Arduino</span> <span class="badge">LED strip</span></p>
+			</div>
+		</div>
+		<div class="thumb"><img class="media" src="img/floor-is-lava.webp" alt="High-top sneaker with LED strips glowing blue and pink along the sole"></div>
+	</div>
+	<hr>
+	<div class="project">
+		<div class="info">
+			<h3>The Dining Table (The Potluck)</h3>
+			<div class="body">
+				<p>A VR and physical installation that simulates the dining table experience of five women from different cultures.</p>
+				<p><span class="badge">Unity</span> <span class="badge">Photogrammetry</span> <span class="badge">VR</span></p>
+			</div>
+		</div>
+		<div class="thumb"><img class="media" src="img/dining-table.webp" alt="Photogrammetry scan of a shared meal on a round wooden table"></div>
+	</div>
+	<hr>
+	<div class="project">
+		<div class="info">
+			<h3>Spectral Imaging System</h3>
+			<div class="body">
+				<p><b><u>Ashley Chu</u></b>, Abinaya Dinesh, Andrew Shen, Jaewon Lee</p>
+				<p>A stereoscopic camera system that captures UV and infrared light using bandpass filters, with stereo rectification and alignment applied to the images.</p>
+				<p><span class="badge">Stereo vision</span> <span class="badge">UV/IR filters</span> &#123; <a target="_blank" href="https://docs.google.com/presentation/d/1VNLEWIEcuaAnvGVDeHRUf_lqoD4d0ee0BzDCQ6pevh4/edit?usp=sharing">slides</a> &#125;</p>
+			</div>
+		</div>
+		<a target="_blank" href="https://docs.google.com/presentation/d/1VNLEWIEcuaAnvGVDeHRUf_lqoD4d0ee0BzDCQ6pevh4/edit?usp=sharing" class="thumb no-hover"><img class="media" src="img/spectral-imaging.webp" alt="Handheld stereoscopic camera rig with two Raspberry Pi cameras and filters"></a>
+	</div>
+	<hr>
+	<div class="project">
+		<div class="info">
+			<h3>Vscodeology</h3>
+			<div class="body">
+				<p>An iOS app that extracts five-color HEX palettes from images.</p>
+				<p><span class="badge">Swift</span> <span class="badge">Python</span> <span class="badge">Flask</span> &#123; <a target="_blank" href="https://bit.ly/ashchuvscodeology">app</a> &#125;</p>
+			</div>
+		</div>
+		<a target="_blank" href="https://bit.ly/ashchuvscodeology" class="thumb no-hover"><img class="media" src="img/vscodeology.png" alt="Vscodeology app"></a>
+	</div>
+	<hr>
+	<div class="project">
+		<div class="info">
+			<h3>Predicting Movie Review Sentiments</h3>
+			<div class="body">
+				<p>A data analytics project that predicts the sentiment of films from their reviews.</p>
+				<p><span class="badge">Python</span> <span class="badge">BeautifulSoup</span> <span class="badge">NLTK</span> &#123; <a target="_blank" href="https://bit.ly/ashchumoviereviews">project</a> &#125;</p>
+			</div>
+		</div>
+		<a target="_blank" href="https://bit.ly/ashchumoviereviews" class="thumb no-hover"><img class="media" src="img/sentiments.png" alt="Sentiment analysis project"></a>
+	</div>
+	<hr>
+	<div class="project">
+		<div class="info">
+			<h3>She-Quality</h3>
+			<div class="body">
+				<p>A VR web app that simulates women's experiences in the workplace.</p>
+				<p><span class="badge">HTML</span> <span class="badge">CSS</span> <span class="badge">JavaScript</span> <span class="badge">A-Frame</span></p>
+			</div>
+		</div>
+		<div class="thumb"><img class="media" src="img/shequality.png" alt="She-Quality"></div>
+	</div>
+	<hr>
+	<div class="project">
+		<div class="info">
+			<h3>Chabot: Explore the Galaxy!</h3>
+			<div class="body">
+				<p>An Android app, built with a team, that teaches science.</p>
+				<p><span class="badge">Java</span></p>
+			</div>
+		</div>
+		<div class="thumb"><img class="media" src="img/web.png" alt="Chabot app"></div>
+	</div>
+	<hr>
+	<div class="project">
+		<div class="info">
+			<h3>Passing Down Indigenous Knowledge</h3>
+			<div class="body">
+				<p>An exhibit on Indigenous food sovereignty that teaches youth about traditional food processes, created for HA192CU.</p>
+				<p><span class="badge">Exhibit design</span> <span class="badge">Hearst Museum</span> &#123; <a target="_blank" href="https://hearstmuseum.berkeley.edu/exhibit/exploring-california-indigenous-food-practices-traditional-acorn-mush">exhibit</a> &#125;</p>
+			</div>
+		</div>
+		<a target="_blank" href="https://hearstmuseum.berkeley.edu/exhibit/exploring-california-indigenous-food-practices-traditional-acorn-mush" class="thumb no-hover"><img class="media" src="img/acorns.png" alt="Acorn exhibit"></a>
+	</div>
+</div>
+</body>
+</html>
