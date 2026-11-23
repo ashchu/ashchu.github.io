@@ -60,8 +60,16 @@ body{
 	margin: 0;
 	/* font-family: 'Varela Round', sans-serif; */
 	/* font-family: "Leitura News", Palatino, Georgia, "Times New Roman", serif; */
-	font-family: 'Source Serif Pro', serif;
+	/* font-family: 'Source Serif Pro', serif; */
 	/* font-family: serif; */
+	font-family: system-ui, -apple-system, sans-serif;
+}
+
+#now{
+	padding: 14px;
+	background: #fff;
+	font-family: system-ui, -apple-system, sans-serif;
+	color: var(--ink);
 }
 
 /* @media only screen and (max-width: 900px) {
@@ -69,10 +77,6 @@ body{
 	background-color:black;
 	}
 } */
-
-button {
-	font-family: 'Source Serif Pro', serif;
-}
 
 #home {
 	margin: 0;
@@ -84,7 +88,8 @@ button {
 }
 
 h1 {
-	font-size: 2.6vw;
+	font-weight: normal;
+	font-size: 2.vw;
 	display:inline-flex;
 	margin-left:3vw;
 }
@@ -143,12 +148,13 @@ a {
 	top: 4.5%;
 	position: absolute;
 	left: 80%;
-	text-shadow: 3px 3px 2px #000000;
+	/* text-shadow: 3px 3px 2px #000000; */
 }
 
 #footer {
-	height: 7vh;
-	background-color: #101114;;
+	height: fit-content;
+	padding:10px;
+	background-color: #8892b2;;
 	color: white;
 }
 
@@ -168,7 +174,7 @@ a {
 	left: 41vw;
 	/* padding:10px; */
 	margin: 10px;
-	width: 250px;
+	width: fit-content;
 	background-color: lightblue;
 	border: 2px solid;
 	border-color:black;
@@ -334,7 +340,7 @@ a {
 
 #profile-desc {
 	font-size: 1rem;
-	padding-top: 10%;
+	padding-top: 8%;
 	margin: 10%;
 	/* line-height: 1.2em; */
 	max-width: fit-content;
@@ -348,13 +354,15 @@ a {
 }
 
 .light {
-	background: rgba(245,215,110,0.5);
+	background: rgba(244, 240, 134, 0.47);
   transition: all linear .2s;
+  border-radius: 2px;
 }
 
 .light:hover{
-	background: rgba(245,215,110,1);
+	background: rgb(255, 251, 132);
 	transition: all linear .2s;
+	border-radius: 2px;
 }
 
 #profile-desc a{
@@ -466,9 +474,113 @@ a:hover {
 }
 
 .bclass{
-  font-weight: 800;
+  /* font-weight: 800; */
   text-align: center;
   text-decoration: underline;
   /* background-color: #F5C6C6; */
   width: auto;
 }
+
+/* ==========================================================================
+   STYLES
+   ========================================================================== */
+
+/* ---- Design tokens ------------------------------------------------------- */
+:root {
+  --ink: #101114;            /* outlines and text */
+  --paper: #fffdf7;          /* card background */
+  --header: #f3ece0;         /* top bar of the card */
+  --hero-bg: #fdeee4;        /* hero background */
+  --highlight: rgba(245, 215, 110, .55);
+  --highlight-hover: rgba(245, 215, 110, 1);
+  --spin-slow: 2.4s;         /* seconds per cycle while idle (bigger = slower) */
+  --spin-fast: .6s;          /* seconds per cycle while the clay is changing */
+  --mono: ui-monospace, Menlo, monospace;
+}
+
+/* ---- Card frame ---------------------------------------------------------- */
+.frame {
+  max-width: 720px;
+  margin: 0 auto;
+  /* border: 2px solid var(--ink); */
+  /* border-radius: 4px; */
+  /* background: var(--paper); */
+  overflow: hidden;
+}
+.frame-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 10px;
+  border-bottom: 2px solid var(--ink);
+  background: var(--header);
+  font: 11px var(--mono);
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  padding: 18px 22px;
+  /* background: var(--hero-bg); */
+}
+
+/* ---- Left column: text --------------------------------------------------- */
+.hero-text { flex: 1; min-width: 250px; }
+.hero-title { font-size: 24px; font-weight: 500; }
+.hero-desc  { min-height: 30px; margin: 4px 0 12px; font-size: 15px; line-height: 1.5; }
+.divider    { margin: 10px 0 6px; border-top: 2px dashed var(--ink); }
+.now        { font-size: 15px; line-height: 2.05; }
+.now-label  { font: 12px var(--mono); }
+
+/* ---- Shape buttons (spans, not <button>, so no browser styling interferes) */
+.shape-btn {
+  display: inline-block;
+  margin: 0 6px 6px 0;
+  padding: 6px 11px;
+  border: 2px solid var(--ink);
+  border-radius: 2px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1.2;
+  cursor: pointer;
+  user-select: none;
+}
+.shape-btn.is-active { background: var(--ink); color: #fff; }
+
+/* ---- Hover phrases ------------------------------------------------------- */
+.phrase {
+  padding: 0 2px;
+  border-bottom: 2px solid var(--ink);
+  background: var(--highlight);
+  cursor: pointer;
+  transition: background .2s;
+}
+.phrase:hover { background: var(--highlight-hover); }
+
+/* ---- Right column: wheel ------------------------------------------------- */
+.hero-art     { width: 240px; text-align: center; }
+.art-caption  { margin-top: -2px; font-size: 13px; }
+.art-hint     { margin-top: 2px;  font-size: 11px; }
+
+#wheel {
+  touch-action: none;        /* lets touch-drag reshape instead of scrolling */
+  user-select: none;
+  cursor: grab;
+}
+
+/* Clay color changes smoothly between shapes */
+#clay-fill { transition: fill .45s; }
+#rim       { transition: opacity .3s; }
+
+/* Little extras (soccer patches, dumpling pleats...) fade in per shape */
+.detail          { opacity: 0; transition: opacity .35s; } 
+.detail.is-shown { opacity: 1; }
+
+/* Spin: stripes slide across the clay, dashes circle the wheel head */
+@keyframes stripe-slide { to { transform: translateX(-24px); } }
+@keyframes ring-spin    { to { stroke-dashoffset: -60; } }
+.stripes-spin { animation: stripe-slide var(--spin-slow) linear infinite; }
+.ring-spin    { animation: ring-spin    var(--spin-slow) linear infinite; }
+#wheel.is-forming .stripes-spin,
+#wheel.is-forming .ring-spin { animation-duration: var(--spin-fast); }

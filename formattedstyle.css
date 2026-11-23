@@ -41,23 +41,11 @@ p{
 .title {
   text-align: center;
   font-size: 2rem;
-  margin-top: 40px;
+  margin: fit-content;
 }
 
 .title:after p {
   background-color: yellow;
-}
-
-.hight {
-  background: linear-gradient(180deg,rgba(255,255,255,0) 58%, #FFD0AE 50%);
-}
-
-#experience {
-
-}
-
-#curr_exp {
-
 }
 
 .descTitle {
@@ -70,6 +58,7 @@ p{
   font-style: italic;
 	padding-top:5px;
 	font-size: 1rem;
+  line-height: 2.05;
   margin-left: 5%;
 }
 
